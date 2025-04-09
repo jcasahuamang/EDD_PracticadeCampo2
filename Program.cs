@@ -32,7 +32,7 @@ namespace PracticadeCampo2
             // ORDENAR PRODUCTOS
             Console.WriteLine("\n--- ORDENAR PRODUCTOS ---");
             lista.Ordenar();
-            lista.Listar();
+  //          lista.Listar();
             Console.ReadLine();
 
         }
