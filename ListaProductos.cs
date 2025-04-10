@@ -102,6 +102,25 @@ namespace PracticadeCampo2
         }
         public void Ordenar()//Responsable: Alessandra Ventura
         {
+            ptr = raiz1;
+            do
+            {
+                ptr1 = ptr;
+                do
+                {
+                    if (ptr.info.IdProducto > ptr1.info.IdProducto)
+                    {
+                        Productos aux = ptr.info;
+                        ptr.info = ptr1.info;
+                        ptr1.info = aux;
+
+                    }
+                    ptr1 = ptr1.sig;
+                } while (ptr1 != raiz1);
+                ptr = ptr.sig;
+            } while (ptr != raiz1);
+
+
         }
     }
     }
