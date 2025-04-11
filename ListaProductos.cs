@@ -64,6 +64,33 @@ namespace PracticadeCampo2
         }
         public void Buscar(int IdProducto) //Responsable: Bryan Becerra
         {
+            bool encontrado = false;
+            ptr = raiz1;
+
+            if (ptr != null)
+            {
+                do
+                {
+                    if (ptr.info.IdProducto == IdProducto)
+                    {
+                        Console.WriteLine("\n--- PRODUCTO ENCONTRADO ---");
+                        Console.WriteLine("ID: {0}", ptr.info.IdProducto);
+                        Console.WriteLine("Descripción: {0}", ptr.info.Descripcion);
+                        Console.WriteLine("Stock: {0}", ptr.info.Stock);
+                        Console.WriteLine("Precio: {0}", ptr.info.Precio);
+                        Console.WriteLine("Estado: {0}", ptr.info.Estado);
+                        encontrado = true;
+                        break;
+                    }
+                    ptr = ptr.sig;
+                } while (ptr != raiz1);
+            }
+
+            if (!encontrado)
+            {
+                Console.WriteLine("\nProducto con ID {0} no encontrado.", IdProducto);
+            }
+
         }
 
         public void Eliminar(int IdProducto)//Responsable: Bryan Benavides  --> cambio con Yeni Lloclle
