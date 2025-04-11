@@ -47,7 +47,7 @@ namespace PracticadeCampo2
             {
                 do
                 {
-                    Console.WriteLine("\n{0} {1} {2} {3} {4}",
+                    Console.WriteLine("\n    {0} {1} {2} {3} {4}",
                         ptr.info.IdProducto,
                         ptr.info.Descripcion,
                         ptr.info.Stock,
@@ -74,11 +74,11 @@ namespace PracticadeCampo2
                     if (ptr.info.IdProducto == IdProducto)
                     {
                         Console.WriteLine("\n--- PRODUCTO ENCONTRADO ---");
-                        Console.WriteLine("ID: {0}", ptr.info.IdProducto);
-                        Console.WriteLine("Descripción: {0}", ptr.info.Descripcion);
-                        Console.WriteLine("Stock: {0}", ptr.info.Stock);
-                        Console.WriteLine("Precio: {0}", ptr.info.Precio);
-                        Console.WriteLine("Estado: {0}", ptr.info.Estado);
+                        Console.WriteLine("    ID: {0}", ptr.info.IdProducto);
+                        Console.WriteLine("    Descripción: {0}", ptr.info.Descripcion);
+                        Console.WriteLine("    Stock: {0}", ptr.info.Stock);
+                        Console.WriteLine("    Precio: {0}", ptr.info.Precio);
+                        Console.WriteLine("    Estado: {0}", ptr.info.Estado);
                         encontrado = true;
                         break;
                     }
@@ -88,7 +88,7 @@ namespace PracticadeCampo2
 
             if (!encontrado)
             {
-                Console.WriteLine("\nProducto con ID {0} no encontrado.", IdProducto);
+                Console.WriteLine("\n    Producto con ID {0} no encontrado.", IdProducto);
             }
 
         }
@@ -124,7 +124,7 @@ namespace PracticadeCampo2
                     }
                     ptr = ptr.sig;
                 } while (ptr != raiz1);
-                Console.WriteLine("\n{0}, PRODUCTO {1}", IdProducto, (encontrado ? "ELIMINADO" : "ELIMINADO"));
+                Console.WriteLine("\n    {0}, PRODUCTO {1}", IdProducto, (encontrado ? "ELIMINADO" : "ELIMINADO"));
             }
         }
         public void Ordenar()//Responsable: Alessandra Ventura

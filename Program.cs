@@ -22,15 +22,15 @@ namespace PracticadeCampo2
             lista.Listar();
             Console.Write("\n");
             // BUSCAR PRODUCTO
-            Console.WriteLine("\n--- BUSQUEDA DE PRODUCTO---");
+            Console.WriteLine("\n--- BUSQUANDO PRODUCTOS ---");
             lista.Buscar(200);
             lista.Buscar(700);
             // ELIMINAR PRODUCTO
-            Console.WriteLine("\n--- ELIMINAR PRODUCTO ---");
+            Console.WriteLine("\n--- ELIMINANDO PRODUCTOS ---");
             lista.Eliminar(300);
             lista.Listar();
             // ORDENAR PRODUCTOS
-            Console.WriteLine("\n--- ORDENAR PRODUCTOS ---");
+            Console.WriteLine("\n--- ORDENANDO PRODUCTOS ---");
             lista.Ordenar();
             lista.Listar();
             Console.ReadLine();
